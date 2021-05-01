@@ -40,13 +40,13 @@ let score=0,
     }
 // game over check function
     const gameOver = function(){
-        if(playerOne >= 20){
+        if(playerOne >= 30){
             winArea.textContent="The winner is Player 1";
             winArea.classList.remove('hidden');
             reinitialize();
             return true;
         }
-        if(playerTwo >= 20){
+        if(playerTwo >= 30){
             winArea.textContent="The winner is Player 2";
             winArea.classList.remove('hidden');
             reinitialize();
