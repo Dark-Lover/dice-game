@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  background: hsl(356, 100%, 81%);
+  background: linear-gradient(
+    56deg,
+    rgba(255, 158, 164, 1) 0%,
+    rgba(255, 84, 98, 1) 100%
+  );
+}
+
+.wrapper {
+  max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  background-color: #ff9ea5;
+  box-shadow: 0px 0px 61px -7px rgba(20, 18, 18, 0.24);
+  position: relative;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+.normal-block {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.diceImg {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: relative;
+}
+.diceImg i {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 12%;
+  left: 20%;
+}
+
+.player {
+  justify-content: space-around;
+  height: 100%;
+  position: relative;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.scoreArea {
+  background-color: white;
+  justify-content: space-around;
+  gap: 0;
+  background-color: hsl(355, 100%, 62%);
+  color: white;
+  border-radius: 10px;
+  padding: 15px 40px;
+}
+
+.score {
+  color: hsl(355, 100%, 62%);
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.c_score {
+  font-size: 1.8rem;
+}
+
+.wait {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+  z-index: -1;
+}
+
+.win {
+  position: absolute;
+  z-index: 10000;
+  padding: 10px 80px;
+  background: white;
+  font-size: 2rem;
+  border-radius: 20px;
+  color: hsl(113, 68%, 49%);
+  text-transform: uppercase;
+  font-weight: 600;
+  top: 8px;
+}
